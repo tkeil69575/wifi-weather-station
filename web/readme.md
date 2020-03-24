@@ -1,4 +1,4 @@
-#PHP Web Interface for Weather Station 
+# PHP Web Interface for ESP8266 Weather Station 
 
 PHP Script for Wifi Weather station that accepts posts from Arduino 
 ESP8266, then saves the variables to an SQLite database and displays the 
