@@ -1,0 +1,88 @@
+html, body {
+  margin: 0 auto;
+  height: 100%;
+  font-family: Raleway;
+}
+
+body {
+  overflow: hidden;
+}
+
+#chart-container {
+    width: 97%;
+    height: 97%;
+    margin: 0 auto;
+    margin-top: 0.8em;
+    text-align: center;
+}
+
+#draussen {
+  float: right;
+  font-size: 2em;
+  background: #3ab7f6;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+#drinnen {
+  overflow: hidden;
+  font-size: 2em;
+  background: #fea837;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  vertical-align: center;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+
+.temp {
+  font-weight: 700;
+  font-size: 2.5em;
+  line-height: 1.8em;
+}
+
+.time-draussen {
+  color: #175b95;
+}
+
+.time-drinnen {
+  color: #774b12;
+}
+
+.center p {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  outline: none;
+  border: none;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.6em 1.2em;
+  margin-right: 0.5em;
+  margin-top: 1em;
+  border-radius: 0.4em;
+  border: 0;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  background: #000;
+}
