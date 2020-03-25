@@ -1,3 +1,15 @@
+//based on Weather Station by Chris Figge, https://www.youtube.com/watch?v=KMwVNuzghsY&t=429s
+//and original code, available at https://github.com/flazer/weather-station
+//SNTP library by Andreas Spiess, see https://github.com/SensorsIot/SNTPtime/
+
+//added NTP server to ensure posting of weather at exact times of 0, 15, 30 and 45 minutes every hour.
+//after each post, the esp8266 goes into deep sleep and wakes up after 15 minutes. When it wakes up,
+//it connects to Wifi and get the current time from the NTP server, gets the sensor data and sends it
+//to the post script on the webserver. Then it goes back to sleep to save battery. One minute is ample
+//time to connect to wifi and send the data. Both indoor and outdoor weather stations report their 
+//values at the same time (or at leat within the same minute - usually they are only a second appart).
+//by Tina Keil, March 2020
+
 #include <SNTPtime.h>
 #include <BME280I2C.h>
 #include <Wire.h>
