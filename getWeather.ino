@@ -173,14 +173,6 @@ void goToBed (int minutes) {
 }
 
 /**
-   Display time
-*/
-void digitalClockDisplay() {
-  time_t tnow = time(nullptr);
-  Serial.println(ctime(&tnow));
-}
-
-/**
    Dump some information on startup.
 */
 void splashScreen() {
